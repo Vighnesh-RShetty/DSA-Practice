@@ -1,2 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
+
+using DSA_PREP.VIghnesh.Arrays;
+
+public class Program
+{
+    
+    static void Main(string[] args)
+    {
+        int[] arr = { 3, 4, 9, 8, 10 };
+        int max = LargestElement.LargeEelement(arr);
+        Console.WriteLine(max);
+    }
+}
