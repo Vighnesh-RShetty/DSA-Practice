@@ -9,7 +9,8 @@ public class Program
     static void Main(string[] args)
     {
         int[] arr = { 3, 4, 9, 8, 10 };
-        int max = LargestElement.LargeEelement(arr);
-        Console.WriteLine(max);
+        //int max = LargestElement.LargeEelement(arr);
+        int secondMax = LargestElement.SecondLargest(arr);
+        Console.WriteLine(secondMax);
     }
 }
