@@ -42,4 +42,21 @@ public class ArraySorted
         }
         return true;
     }
+
+    ///Remove the dublicate element from the sorted array. Integer Array Sorted in non decending order
+    //remove all the dublicate in-place so that each unique element appears only once.
+    public static Boolean RemoveDublicateEle(int[] arr) {
+        HashSet<int> set = new();
+
+        for(int i = 1; i < arr.Length; i++)
+        {
+            set.Add(arr[i]);
+        }
+        Console.WriteLine("Set Data");
+        foreach(int value in set ){
+            Console.WriteLine("Set Data : "+value);
+        }
+
+        return true;
+    }
 }
