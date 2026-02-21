@@ -18,7 +18,7 @@ public class Program
         int[] arr = { 1, 1, 2,2,3,4,5,6,6,7,8,8,9,9,10,11,11 };
 
         ArraySorted.RemoveDublicateEle(arr);
-        Console.WriteLine("Array After Removing The Ele");
+        Console.WriteLine("Array After Removing The Elements");
         for(int i = 0; i < arr.Length; i++)
         {
             Console.Write(" " + arr[i]);
