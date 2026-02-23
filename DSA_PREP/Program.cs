@@ -15,10 +15,13 @@ public class Program
         //Boolean isSorted = ArraySorted.SortedArray(arr);
         //  Boolean isSorted = ArraySorted.SortedArrayOptimal(arr);
         //Console.WriteLine(isSorted ? "Sorted Array" : "Not Sorted Array");
-        int[] arr = { 1, 1, 2,2,3,4,5,6,6,7,8,8,9,9,10,11,11 };
-
-        ArraySorted.RemoveDublicateEle(arr);
-        Console.WriteLine("Array After Removing The Elements");
+         int[] arr = { 1, 1, 2,2,3,4,5,6,6,7,8,8,9,9,10,11,11 };
+        //int[] arr = { 1, 2, 2 };
+        // ArraySorted.RemoveDublicateEle(arr);
+        //int length = ArraySorted.OptimalRemoveDublicate(arr);
+        RotateAnArrayByOnePlace.RotateAnArray(arr);
+        
+        Console.WriteLine("Array After Moving The Elements");
         for(int i = 0; i < arr.Length; i++)
         {
             Console.Write(" " + arr[i]);
