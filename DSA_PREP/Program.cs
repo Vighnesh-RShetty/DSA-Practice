@@ -2,6 +2,7 @@
 //Console.WriteLine("Hello, World!");
 
 using DSA_PREP.VIghnesh.Arrays;
+using DSA_PREP.VIghnesh.SystemDesign.LiskovSubstituion_Principle.LiskovFailing;
 
 
 public class Program
@@ -19,12 +20,13 @@ public class Program
         //int[] arr = { 1, 2, 2 };
         // ArraySorted.RemoveDublicateEle(arr);
         //int length = ArraySorted.OptimalRemoveDublicate(arr);
-        RotateAnArrayByOnePlace.RotateAnArray(arr);
+        //RotateAnArrayByOnePlace.RotateAnArray(arr);
+        MainClass.LiskovMain(args);
         
-        Console.WriteLine("Array After Moving The Elements");
-        for(int i = 0; i < arr.Length; i++)
+        //Console.WriteLine("Array After Moving The Elements");
+       // for(int i = 0; i < arr.Length; i++)
         {
-            Console.Write(" " + arr[i]);
+         //   Console.Write(" " + arr[i]);
         }
     }
 }
