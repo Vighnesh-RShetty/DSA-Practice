@@ -29,9 +29,11 @@ public class Program
         //   Console.Write(" " + arr[i]);
         // }
 
-        int[] arr = { 1, 2, 3, 4, 5, 6, 7,8,9};
-        int k = 2;
-        RotateAnArrayByKPlace.RotateArray(arr, 3);
+        int[] arr = { 0, 0, 0, 4, 5, 0, 0,8,9};
+        //int[] arr = { 1, 0, 2 };
+        //int k = 2;
+        //RotateAnArrayByKPlace.RotateArray(arr, 3);
+        MoveZeroToEnd.ZeroToEnd(arr);
         for (int i = 0; i < arr.Length; i++)
         {
             Console.Write(" " + arr[i]);
