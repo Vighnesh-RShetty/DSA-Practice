@@ -2,6 +2,8 @@
 //Console.WriteLine("Hello, World!");
 
 using DSA_PREP.VIghnesh.Arrays;
+using DSA_PREP.VIghnesh.Arrays.SearchingAlgo;
+using DSA_PREP.VIghnesh.Revision.Array;
 using DSA_PREP.VIghnesh.SystemDesign.LiskovSubstituion_Principle.LiskovFailing;
 
 
@@ -10,34 +12,10 @@ public class Program
 
     static void Main(string[] args)
     {
-        // int[] arr = { 1,2,2,3,4,4,5,6,7, 8, 10 };
-        //int max = LargestElement.LargeEelement(arr);
-        //int secondMax = LargestElement.SecondLargest(arr);
-        //Boolean isSorted = ArraySorted.SortedArray(arr);
-        //  Boolean isSorted = ArraySorted.SortedArrayOptimal(arr);
-        //Console.WriteLine(isSorted ? "Sorted Array" : "Not Sorted Array");
-        //int[] arr = { 1, 1, 2,2,3,4,5,6,6,7,8,8,9,9,10,11,11 };
-        //int[] arr = { 1, 2, 2 };
-        // ArraySorted.RemoveDublicateEle(arr);
-        //int length = ArraySorted.OptimalRemoveDublicate(arr);
-        //RotateAnArrayByOnePlace.RotateAnArray(arr);
-        //MainClass.LiskovMain(args);
-
-        //Console.WriteLine("Array After Moving The Elements");
-        // for(int i = 0; i < arr.Length; i++)
-        //{
-        //   Console.Write(" " + arr[i]);
-        // }
-
-        int[] arr = { 0, 0, 0, 4, 5, 0, 0,8,9};
-        //int[] arr = { 1, 0, 2 };
-        //int k = 2;
-        //RotateAnArrayByKPlace.RotateArray(arr, 3);
-        MoveZeroToEnd.ZeroToEnd(arr);
-        for (int i = 0; i < arr.Length; i++)
-        {
-            Console.Write(" " + arr[i]);
-        }
-
+        //int[] arr = { 1, 6, 7, 8, 9, 4, 123, 90, 8 };
+       int[] arr = { 1, 1, 2, 3, 4, 5, 5, 6, 7 };
+     //int max =   SecondLargestRevision.SecondMax(arr);
+     
+        Console.Write(CheckArraySorted.CheckSorted(arr));
     }
 }
