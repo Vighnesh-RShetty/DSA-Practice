@@ -16,6 +16,6 @@ public class Program
        int[] arr = { 1, 1, 2, 3, 4, 5, 5, 6, 7 };
      //int max =   SecondLargestRevision.SecondMax(arr);
      
-        Console.Write(CheckArraySorted.CheckSorted(arr));
+        Console.Write(RemoveDublicate.RemoveDublicateInArray(arr));
     }
 }
