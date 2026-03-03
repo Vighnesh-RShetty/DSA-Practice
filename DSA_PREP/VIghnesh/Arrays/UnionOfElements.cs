@@ -28,12 +28,76 @@ namespace DSA_PREP.VIghnesh.Arrays
             int n = setArray.Count;
             int[] resArray = new int[n];
             int index = 0;
-            foreach(int i in setArray)
+            foreach (int i in setArray)
             {
                 resArray[index++] = i;
             }
             return resArray;
         }
 
+        //Method Two Is Im Thinking To Use Two Pointer
+
+        public static int[] UnionOfArrayTwoPointerApproach(int[] arr1, int[] arr2)
+        {
+            int[] res = new int[arr1.Length + arr2.Length];
+
+            int i = 0;
+            int j = 0;
+            int z = 0;
+
+            while (i < arr1.Length && j < arr2.Length)
+            {
+                if (arr1[i] == arr2[j])
+                {
+                    if (z == 0 || res[z - 1] != arr1[i])
+                    {
+                        res[z] = arr1[i];
+                        z++;
+                    }
+                    i++; j++;
+                }
+                else if (arr1[i] > arr2[j])
+                {
+                    if (z == 0 || res[z - 1] != arr2[j])
+                    {
+                        res[z] = arr2[j];
+                        z++;
+
+                    }
+                    j++;
+                }
+                else
+                {
+                    if (z == 0 || res[z - 1] != arr1[i])
+                    {
+                        res[z] = arr1[i];
+                        z++;
+                    }
+                    i++;
+                }
+            }
+                while (i < arr1.Length)
+                {
+                    if (z == 0 || res[z - 1] != arr1[i])
+                    {
+                        res[z] = arr1[i];
+                        z++;
+                    }
+                    i++;
+                }
+                while (j < arr2.Length)
+                {
+                    if (z == 0 || res[z - 1] != arr2[j])
+                    {
+                        res[z] = arr2[j];
+                        z++;
+                    }
+                    j++;
+                }
+            return res;
+        }
+            
+
+        }
     }
-}
+
