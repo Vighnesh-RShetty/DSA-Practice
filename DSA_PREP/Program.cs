@@ -37,8 +37,8 @@ public class Program
         //{
         //    Console.WriteLine(resArray[i] + " ");
         //}
-        int[] arr1 = { 1, 2,4,5,6 };
-        int n = FindMissingNumber.FindMissings(arr1);
+        int[] arr1 = { 4, 2, 1, 5 };
+        int n = FindMissingNumber.FindMissingNum(arr1);
         Console.WriteLine(n);
     }
 }
