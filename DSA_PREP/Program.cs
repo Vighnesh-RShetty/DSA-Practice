@@ -25,16 +25,20 @@ public class Program
         //}
         //int[] arr1 = { 1, 2, 3, 4, 5 };
         //int[] arr2 = { 1, 2, 7 };
-        int[] arr1 = { 3, 4, 6, 7, 9, 9 };
-        int[] arr2 = { 1, 5, 7, 8, 8 };
+        //int[] arr1 = { 3, 4, 6, 7, 9, 9 };
+        //int[] arr2 = { 1, 5, 7, 8, 8 };
         // int n = arr1.Length > arr2.Length ?arr1.Length : arr2.Length;
         //int n = arr1.Length + arr2.Length;
         //int[] resArray = new int[n];
         // int[] resArray = UnionOfElements.UnionOfUsingSet(arr1, arr2);
-        int[] resArray = UnionOfElements.UnionOfArrayTwoPointerApproach(arr1, arr2);
-        for (int i = 0; i < resArray.Length; i++)
-        {
-            Console.WriteLine(resArray[i] + " ");
-        }
+
+        //int[] resArray = UnionOfElements.UnionOfArrayTwoPointerApproach(arr1, arr2);
+        //for (int i = 0; i < resArray.Length; i++)
+        //{
+        //    Console.WriteLine(resArray[i] + " ");
+        //}
+        int[] arr1 = { 1, 2,4,5,6 };
+        int n = FindMissingNumber.FindMissings(arr1);
+        Console.WriteLine(n);
     }
 }
