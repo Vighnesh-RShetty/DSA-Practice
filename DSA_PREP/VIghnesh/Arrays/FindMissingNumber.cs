@@ -23,7 +23,7 @@ public class FindMissingNumber
         }
         return 0;
     }
-
+    //Good One Vighnesh Keep It Up
     public static int FindMissingNum(int[] arr)
     {
         int total = 0;
