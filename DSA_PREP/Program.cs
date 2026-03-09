@@ -37,8 +37,12 @@ public class Program
         //{
         //    Console.WriteLine(resArray[i] + " ");
         //}
-        int[] arr1 = { 4, 2, 1, 5 };
-        int n = FindMissingNumber.FindMissingNum(arr1);
-        Console.WriteLine(n);
+        //int[] arr1 = { 4, 2, 1, 5 };
+        //int n = FindMissingNumber.FindMissingNum(arr1);
+        //Console.WriteLine(n);
+
+        int[] arr2 = { 0, 0, 0, 0, 0,0 };
+        int maxOnes = MaximumConsecutiveOnes.MaxConsecutiveOnes(arr2);
+        Console.WriteLine(maxOnes);
     }
 }
