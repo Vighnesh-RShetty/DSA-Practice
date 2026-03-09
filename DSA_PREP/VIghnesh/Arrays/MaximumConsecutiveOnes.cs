@@ -22,7 +22,6 @@ namespace DSA_PREP.VIghnesh.Arrays
                     {
                         maxCount = count;
                     }
-
                 }
                 else
                 {

@@ -5,6 +5,7 @@ using DSA_PREP.VIghnesh.Arrays;
 using DSA_PREP.VIghnesh.Arrays.SearchingAlgo;
 using DSA_PREP.VIghnesh.Revision.Array;
 using DSA_PREP.VIghnesh.SystemDesign.LiskovSubstituion_Principle.LiskovFailing;
+using System.Runtime.CompilerServices;
 
 
 public class Program
@@ -41,8 +42,13 @@ public class Program
         //int n = FindMissingNumber.FindMissingNum(arr1);
         //Console.WriteLine(n);
 
-        int[] arr2 = { 0, 0, 0, 0, 0,0 };
-        int maxOnes = MaximumConsecutiveOnes.MaxConsecutiveOnes(arr2);
-        Console.WriteLine(maxOnes);
+        //int[] arr2 = { 0, 0, 0, 0, 0,0 };
+        //int maxOnes = MaximumConsecutiveOnes.MaxConsecutiveOnes(arr2);
+        //Console.WriteLine(maxOnes);
+
+        int[] arr1 = { 2, 2, 1 };
+        //int number = NumberAppearceOnce.NumAppearceOnce(arr1);
+        int number = NumberAppearceOnce.NumAppearceOnceXOR(arr1);
+        Console.WriteLine(number);
     }
 }
