@@ -46,9 +46,12 @@ public class Program
         //int maxOnes = MaximumConsecutiveOnes.MaxConsecutiveOnes(arr2);
         //Console.WriteLine(maxOnes);
 
-        int[] arr1 = { 2, 2, 1 };
+        int[] arr1 = { 2, 2, 1,1,2,1,2,1,2 };
+        int k = 3;
         //int number = NumberAppearceOnce.NumAppearceOnce(arr1);
-        int number = NumberAppearceOnce.NumAppearceOnceXOR(arr1);
-        Console.WriteLine(number);
+        //int number = NumberAppearceOnce.NumAppearceOnceXOR(arr1);
+        //Console.WriteLine(number);
+      int length =  MaximumSubArraySum.maxSubarrayLength(arr1, k);
+        Console.WriteLine(length);
     }
 }
