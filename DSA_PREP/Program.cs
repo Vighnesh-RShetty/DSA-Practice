@@ -16,10 +16,13 @@ public class Program
 
     static void Main(string[] args)
     {
-        int[] arr = { 1, 2, 3, -3, 1, 1, 1, 4, 2, -3 };
+        // int[] arr = { 10, 5, 2, 7, 1, 9 };
+        //int k = 15;
+        // int count = MaximumSubArraySum.optimizedMaximunSubArray(arr, k);
+        int[] arr = { 1, 2, 3, 1, 1, 1, 1 };
         int k = 3;
-       int count = MaximumSubArraySum.optimizedMaximunSubArray(arr, k);
-        Console.WriteLine(count);
+        int maxCount = LongestSubArraySum.LongestSubArraySumLength(arr, k);
+        Console.WriteLine(maxCount);
     }
 }
 

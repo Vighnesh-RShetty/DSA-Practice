@@ -35,34 +35,38 @@ namespace DSA_PREP.VIghnesh.Arrays
             return count;
         }
 
-        public static int optimizedMaximunSubArray(int[] arr, int k)
+        public static int optimizedMaximunSubArray()
         {
-            Dictionary<int, int> prefixMap = new Dictionary<int, int>();
+            int[] arr = { 1, 2, 3, 4 }; 
+            int k = 3;
+            Dictionary<int, int> map = new Dictionary<int, int>();
 
             int prefixSum = 0;
             int count = 0;
-            prefixMap[0] = 1;
-
-            for(int i = 0; i < arr.Length; i++)
+            map[0] = 1;
+            for (int i = 0; i < arr.Length; i++)
             {
-                prefixSum+=arr[i];
+                prefixSum += arr[i];
+                int remaining = prefixSum - k;
 
-                int remaing = prefixSum - k;
-                if (prefixMap.ContainsKey(remaing))
-                {
-                    count += prefixMap[remaing];
+                if (map.ContainsKey(remaining)){
+                    count += map[remaining];
                 }
-                if (prefixMap.ContainsKey(prefixSum))
+                if (map.ContainsKey(prefixSum))
                 {
-                    prefixMap[prefixSum]++;
+                    map[prefixSum]++;
                 }
-                else
-                {
-                    prefixMap[prefixSum] = 1;
+                else{
+                    map[prefixSum] = 1;
                 }
+                
             }
             return count;
         }
     }
-}
+            //return count;
+        }
+
+        //public static int 
+
 
