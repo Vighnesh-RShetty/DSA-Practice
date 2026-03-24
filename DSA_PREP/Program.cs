@@ -23,6 +23,11 @@ public class Program
         int k = 3;
         int maxCount = LongestSubArraySum.LongestSubArraySumLength(arr, k);
         Console.WriteLine(maxCount);
+
+        int[] arr1 = { 1, 2, 3, 1, 1, 1, 1,1,4 };
+        int k1 = 4;
+        int maxCount1 = LongestSubArraySum.OptimizedLongestSubArraySumLength(arr1, k1);
+        Console.WriteLine(maxCount);
     }
 }
 
