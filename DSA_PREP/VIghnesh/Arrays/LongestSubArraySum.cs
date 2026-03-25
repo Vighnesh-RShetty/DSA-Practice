@@ -47,16 +47,26 @@ namespace DSA_PREP.VIghnesh.Arrays
            for(int i = 0; i < arr.Length; i++)
             {
                 prefixSum += arr[i];
-                dict[prefixSum] = i;
+                if(prefixSum == k)
+                {
+                    maxLength = i + 1;
+                }
+               
+
                 int remaining = prefixSum - k;
+
 
                 if (dict.ContainsKey(remaining))
                 {
-                    currentLength = dict[remaining];
+                    currentLength = i - dict[remaining];
                     if(currentLength > maxLength)
                     {
                         maxLength = currentLength;
                     }
+                }
+                if (!dict.ContainsKey(prefixSum))
+                {
+                    dict[prefixSum] = i;
                 }
                // return maxLength; 
             }

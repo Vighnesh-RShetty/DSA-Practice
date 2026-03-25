@@ -27,7 +27,7 @@ public class Program
         int[] arr1 = { 1, 2, 3, 1, 1, 1, 1,1,4 };
         int k1 = 4;
         int maxCount1 = LongestSubArraySum.OptimizedLongestSubArraySumLength(arr1, k1);
-        Console.WriteLine(maxCount);
+        Console.WriteLine(maxCount1);
     }
 }
 
