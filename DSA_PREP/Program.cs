@@ -19,15 +19,27 @@ public class Program
         // int[] arr = { 10, 5, 2, 7, 1, 9 };
         //int k = 15;
         // int count = MaximumSubArraySum.optimizedMaximunSubArray(arr, k);
-        int[] arr = { 1, 2, 3, 1, 1, 1, 1 };
-        int k = 3;
-        int maxCount = LongestSubArraySum.LongestSubArraySumLength(arr, k);
-        Console.WriteLine(maxCount);
+        //int[] arr = { 1, 2, 3, 1, 1, 1, 1 };
+        //int k = 3;
+        //int maxCount = LongestSubArraySum.LongestSubArraySumLength(arr, k);
+        //Console.WriteLine(maxCount);
 
-        int[] arr1 = { 1, 2, 3, 1, 1, 1, 1,1,4 };
-        int k1 = 4;
-        int maxCount1 = LongestSubArraySum.OptimizedLongestSubArraySumLength(arr1, k1);
-        Console.WriteLine(maxCount1);
+        //int[] arr1 = { 1, 2, 3, 1, 1, 1, 1,1,4 };
+        //int k1 = 4;
+        //int maxCount1 = LongestSubArraySum.OptimizedLongestSubArraySumLength(arr1, k1);
+        //Console.WriteLine(maxCount1);
+
+        // int[] arr = [2, 7, 11, 15];
+        //int k = 9;
+
+        // int[] arr = [10,1,7,3,9];
+        //int k = 10;
+
+        int[] arr = [3,2,4];
+        int k = 6;
+
+        int[] targetArray = TwoSum.TwoSumValues(arr, k);
+        Console.WriteLine(targetArray);
     }
 }
 
