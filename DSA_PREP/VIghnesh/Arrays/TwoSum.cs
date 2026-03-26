@@ -19,7 +19,7 @@ namespace DSA_PREP.VIghnesh.Arrays
                 if (arr[i] + arr[j] == k)
                 {
                     return [i,j];
-                }else if(i > j)
+                }else if(arr[i] > arr[j])
                 {
                     i++;
                 }
@@ -30,6 +30,24 @@ namespace DSA_PREP.VIghnesh.Arrays
 
             }
             return [0,0];
+        }
+
+        public static int[] TwoSumValuesOptimized(int[] arr,int k)
+        {
+            Dictionary<int, int> twoSumDict = new();
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (twoSumDict.ContainsKey(k - arr[i]))
+                {
+                    return [twoSumDict[k - arr[i]],i];
+                }
+                else
+                {
+                    twoSumDict[arr[i]] = i;
+                }
+            }
+            return [-1, -1];
         }
     }
 }
