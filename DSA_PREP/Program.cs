@@ -32,17 +32,22 @@ public class Program
         // int[] arr = [2, 7, 11, 15];
         //int k = 9;
 
-        int[] arr = [10,1,7,3,9];
+        int[] arr = [10, 1, 7, 3, 9];
         int k = 10;
 
         //int[] arr = [3,2,4];
-       // int k = 6;
+        // int k = 6;
 
         //int[] targetArray = TwoSum.TwoSumValues(arr, k);
         //Console.WriteLine(targetArray);
 
-        int[] targetArray = TwoSum.TwoSumValuesOptimized(arr, k);
-        Console.WriteLine(targetArray);
+        //int[] targetArray = TwoSum.TwoSumValuesOptimized(arr, k);
+        //Console.WriteLine(targetArray);
+
+        //Revisions 
+
+        // RemoveDublicate.RemoveDublicateRevision();
+        DSA_PREP.VIghnesh.Revision.Array.MoveZeroToEnd.MoveZeroToEndRevision();
 
     }
 }
