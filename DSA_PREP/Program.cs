@@ -49,10 +49,15 @@ public class Program
         // RemoveDublicate.RemoveDublicateRevision();
         //DSA_PREP.VIghnesh.Revision.Array.MoveZeroToEnd.MoveZeroToEndRevision();
 
-        int[] arr = { 0, 1, 2, 0, 1, 2 };
-        MoveZeroOneTwoAtEnd.MoveZeroAndOneAtEnd(arr);
-        Console.WriteLine(arr);
-        
+        //int[] arr = { 0, 1, 2, 0, 1, 2 };
+        //MoveZeroOneTwoAtEnd.MoveZeroAndOneAtEnd(arr);
+        //Console.WriteLine(arr);
+
+
+        int[] _arr = {7,0,0,1,7,7,2,7,7};
+       
+        Console.WriteLine(MajorityElement1.MajorityElement(_arr));
+
 
     }
 }
