@@ -32,8 +32,8 @@ public class Program
         // int[] arr = [2, 7, 11, 15];
         //int k = 9;
 
-        int[] arr = [10, 1, 7, 3, 9];
-        int k = 10;
+       // int[] arr = [10, 1, 7, 3, 9];
+        //int k = 10;
 
         //int[] arr = [3,2,4];
         // int k = 6;
@@ -47,7 +47,12 @@ public class Program
         //Revisions 
 
         // RemoveDublicate.RemoveDublicateRevision();
-        DSA_PREP.VIghnesh.Revision.Array.MoveZeroToEnd.MoveZeroToEndRevision();
+        //DSA_PREP.VIghnesh.Revision.Array.MoveZeroToEnd.MoveZeroToEndRevision();
+
+        int[] arr = { 0, 1, 2, 0, 1, 2 };
+        MoveZeroOneTwoAtEnd.MoveZeroAndOneAtEnd(arr);
+        Console.WriteLine(arr);
+        
 
     }
 }

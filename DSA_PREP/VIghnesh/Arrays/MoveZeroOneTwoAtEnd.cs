@@ -16,9 +16,9 @@ namespace DSA_PREP.VIghnesh.Arrays
             int high = arr.Length - 1;
             while (low < arr.Length)
             {
-                if (arr[low]<medium && arr[low] < arr[high])
+                if (arr[low] < medium && arr[low] < arr[high])
                 {
-                    low++;medium++;high--;
+                    low++; medium++; high--;
                 }
                 if (arr[low] > arr[medium])
                 {
@@ -26,5 +26,36 @@ namespace DSA_PREP.VIghnesh.Arrays
                 }
             }
         }
+
+        //Dutch National Flag Algorithm
+        public static void MoveZeroAndOneAtEnd(int[] arr)
+        {
+            int low = 0, high = arr.Length - 1, mid = 0;
+            int temp = 0;
+            while (mid <= high)
+            { 
+                if (arr[mid] == 0)
+                {
+                    temp = arr[low];
+                    arr[low] = arr[mid];
+                    arr[mid] = temp;
+                    mid++;
+                    low++;
+                }
+            else if (arr[mid] == 1)
+            {
+                mid++;
+            }
+                else 
+            {
+                temp = arr[high];
+                arr[high] = arr[mid];
+                arr[mid] = temp;
+                high--;
+            }
+
+        }
+    }
     }
 }
+
