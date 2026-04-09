@@ -55,10 +55,10 @@ public class Program
 
 
         int[] _arr = {7,0,0,1,7,7,2,7,7};
-       
-        Console.WriteLine(MajorityElement1.MajorityElement(_arr));
 
-
+        // Console.WriteLine(MajorityElement1.MajorityElement(_arr));
+       int maxSum =  MaximuSubArraySumKadanesAlgo.MaxSubArraySum();
+        Console.WriteLine(maxSum);
     }
 }
 

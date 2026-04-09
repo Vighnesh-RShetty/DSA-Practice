@@ -12,7 +12,6 @@ namespace DSA_PREP.VIghnesh.Arrays
         {
             int n = arr.Length / 2;
             Dictionary<int, int> dictionaryEle = new();
-
          
             for(int i = 0; i < arr.Length; i++)
             {
