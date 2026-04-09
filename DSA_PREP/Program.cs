@@ -32,7 +32,7 @@ public class Program
         // int[] arr = [2, 7, 11, 15];
         //int k = 9;
 
-       // int[] arr = [10, 1, 7, 3, 9];
+        // int[] arr = [10, 1, 7, 3, 9];
         //int k = 10;
 
         //int[] arr = [3,2,4];
@@ -54,17 +54,24 @@ public class Program
         //Console.WriteLine(arr);
 
 
-        int[] _arr = {7,0,0,1,7,7,2,7,7};
+        // int[] _arr = {7,0,0,1,7,7,2,7,7};
 
         // Console.WriteLine(MajorityElement1.MajorityElement(_arr));
-       int maxSum =  MaximuSubArraySumKadanesAlgo.MaxSubArraySum();
-        Console.WriteLine(maxSum);
+        //int maxSum =  MaximuSubArraySumKadanesAlgo.MaxSubArraySum();
+        // Console.WriteLine(maxSum);
+
+        //  int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+
+        //int[] temp = MaximuSubArraySumKadanesAlgo.MaxSubArraySumArray(arr);
+        // Console.WriteLine(temp);
+       int sum = MaximuSubArraySumKadanesAlgo.MaxSubArraySum();
+        Console.WriteLine(sum);
     }
 }
 
 
 
-//Observer Design Pattern
+//Observer Design Patterngit add
 
 //ProducStock product = new ProducStock();
 
