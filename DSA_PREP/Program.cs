@@ -4,6 +4,7 @@
 using DSA_PREP.VIghnesh.Arrays;
 using DSA_PREP.VIghnesh.Arrays.SearchingAlgo;
 using DSA_PREP.VIghnesh.Revision.Array;
+using DSA_PREP.VIghnesh.Revision.Array.AlgosConfusionQuestion;
 using DSA_PREP.VIghnesh.SystemDesign.LiskovSubstituion_Principle.LiskovFailing;
 using DSA_PREP.VIghnesh.SystemDesign.ObserverDesignPattern.ImplClasses.ObservableImpl;
 using DSA_PREP.VIghnesh.SystemDesign.ObserverDesignPattern.ImplClasses.ObserverImpl;
@@ -63,9 +64,20 @@ public class Program
         //  int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
 
         //int[] temp = MaximuSubArraySumKadanesAlgo.MaxSubArraySumArray(arr);
-        // Console.WriteLine(temp);
-       int sum = MaximuSubArraySumKadanesAlgo.MaxSubArraySum();
-        Console.WriteLine(sum);
+        // // Console.WriteLine(temp);
+        //int sum = MaximuSubArraySumKadanesAlgo.MaxSubArraySum();
+        // Console.WriteLine(sum);
+        //int[] arr = { 0, 5, 2, 7, 1, 9 };
+        //int k = 15;
+        //int maxLength = LongestSubArraywitheGivenSum.LongestSubArraySum_K_Positives(arr, k);
+        //Console.WriteLine(maxLength);
+
+        // int maxSubArray = RevisonAlgo.LongestSubarrayWithSum([2, 3, 1, 2, 4, 3],8);
+        //Console.WriteLine(maxSubArray);
+        //int maxLength = RevisonAlgo.LongestSubarrayWithSum_NegativeValues([1, 2, 1, 1, 1], 3);
+
+        int maxLength = RevisonAlgo.MaximumSumSubraySum();
+        Console.WriteLine(maxLength);
     }
 }
 
