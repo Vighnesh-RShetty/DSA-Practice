@@ -76,8 +76,11 @@ public class Program
         //Console.WriteLine(maxSubArray);
         //int maxLength = RevisonAlgo.LongestSubarrayWithSum_NegativeValues([1, 2, 1, 1, 1], 3);
 
-        int maxLength = RevisonAlgo.MaximumSumSubraySum();
-        Console.WriteLine(maxLength);
+        //int maxLength = RevisonAlgo.MaximumSumSubraySum();
+        //Console.WriteLine(maxLength);
+
+        //RearrangeBySign.RearrangeBySignValue();
+        RearrangeBySign.ArrangeBySign();
     }
 }
 
