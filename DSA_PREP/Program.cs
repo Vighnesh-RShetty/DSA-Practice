@@ -82,7 +82,10 @@ public class Program
 
         //RearrangeBySign.RearrangeBySignValue();
         //RearrangeBySign.ArrangeBySign();
-        Revision_Easy.Remove_Dublicates_from_The_Sorted_Array();
+        //Revision_Easy.Remove_Dublicates_from_The_Sorted_Array();
+        // Revision_Easy.Left_Rotate_Array_By_One();
+        //Revision_Easy.Left_Rotate_Array_By_K_Places();
+        Revision_Easy.MoveZeroToEnd();
     }
 }
 
