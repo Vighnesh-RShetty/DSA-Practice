@@ -129,4 +129,125 @@ public class Revision_Easy
             Console.WriteLine(arr[i]);
         }
     }
+
+    public static int[] UnionOfTwoSortedArray()
+    {
+        int[] arr1 = [1, 2, 4, 5];
+        int[] arr2 = [2, 3, 5, 6];
+        int[] res = new int[arr2.Length  + arr1.Length ];
+
+        int i = 0; int j = 0; int k = 0;
+
+        while (i < arr1.Length && j < arr2.Length)
+        {
+            if (arr1[i] > arr2[j])
+            {
+                if (k==0 || res[k - 1] != arr2[j])
+                {
+                    res[k] = arr2[j];
+                     k++;
+                }
+                j++;
+            }
+            else if (arr1[i] < arr2[j])
+            {
+                if (k==0 || res[k - 1] != arr1[i])
+                {
+                    res[k] = arr1[i];
+                    k++;
+                }
+                i++;
+            }
+            else if (arr1[i] == arr2[j])
+            {
+                if (k==0 || res[k - 1] != arr1[i])
+                {
+                    res[k] = arr1[i];
+                     k++;
+                }
+                i++; j++;
+            }
+        }
+        while (i < arr1.Length)
+        {
+            if (k==0 || res[k - 1] != arr1[i])
+            {
+                res[k] = arr1[i];
+                i++; k++;
+            }
+            
+        }
+
+        while (j < arr2.Length)
+        {
+            if (k==0 || res[k - 1] != arr2[j])
+            {
+                res[k] = arr2[j];
+                j++; k++;
+            }
+           
+        }
+
+        for( int z = 0; z < res.Length; z++)
+        {
+            Console.WriteLine(res[z]);
+        }
+        return res;
+    }
+    public static int LongestSubArraySum_Positive()
+    {
+        int[] arr = { 1, 2, 1, 1, 1 };
+        int k = 3;
+
+        int left = 0, sum = 0, maxLength = 0;
+        for (int right = 0; right < arr.Length; right++)
+        {
+            sum += arr[right];
+
+            while(sum>k)
+            {
+                sum -= arr[left];
+                left++;
+            }
+            if(sum == k && maxLength<(right-left)+1)
+            {
+                maxLength = right - left + 1;
+            }
+        }
+        Console.WriteLine(maxLength);
+        return maxLength;
+    }
+    public static int LongestSubArraySum_Negative()
+    {
+        int[] arr = [3, 1, -2, 5, -3, 2, 3, -2, 2, -1];
+        //Longest length = 6
+        int k = 5;
+
+        Dictionary<int, int> prefixMap = new();
+        prefixMap.Add(0, 0);
+        int sum = 0;
+        int maxLength = 0;
+
+        for(int i = 0; i < arr.Length; i++)
+        {
+            sum += arr[i];
+
+            int remaing = sum - k;
+            if ((prefixMap.ContainsKey(remaing)) && maxLength < (i - prefixMap[remaing])) {
+                maxLength = remaing;
+            }else if(prefixMap.ContainsKey(remaing)){
+                prefixMap[remaing] = i;
+            }
+
+            if (!prefixMap.ContainsKey(remaing))
+            {
+                prefixMap[remaing] = i;
+            }
+            
+        }
+        return maxLength;
+    }
+
+
 }
+
