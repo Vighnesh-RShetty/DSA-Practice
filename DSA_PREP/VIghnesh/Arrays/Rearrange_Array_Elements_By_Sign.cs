@@ -45,5 +45,32 @@ namespace DSA_PREP.VIghnesh.Arrays
             }
             return arr;
         }
+
+        public static int[] MoveSignByPositiveAndNegative()
+        {
+            int[] arr = [3, 1, -2, -5, 2, -4];
+            //Output:
+            //[3, -2, 1, -5, 2, -4]
+
+            int[] res = new int[arr.Length];
+            int posIndex = 0;
+            int negIndex = 1;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] > 0)
+                {
+                    res[posIndex] = arr[i];
+                    posIndex += 2;
+                }
+                if (arr[i] < 0)
+                {
+                    res[negIndex] = arr[i];
+                    negIndex += 2;
+                }
+
+            }
+            return res;
+        }
     }
 }
