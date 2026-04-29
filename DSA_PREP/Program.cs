@@ -97,17 +97,30 @@ public class Program
         //LeadersInArray.LeadersArray();
         //  Console.WriteLine(maxPrice);
 
-        String name = "Viggu";
+        //String name = "Viggu";
 
-        Console.WriteLine("My Name Is {0}", name);
+        //Console.WriteLine("My Name Is {0}", name);
 
-        Console.WriteLine("My Name Is "+ name);
+        //Console.WriteLine("My Name Is "+ name);
 
-        //Interpolation 
-        Console.WriteLine("My Name Is `{name}`");
+        ////Interpolation 
+        //Console.WriteLine("My Name Is `{name}`");
 
-        Console.WriteLine($"My Name Is {name}");
-
+        //Console.WriteLine($"My Name Is {name}");
+        int i = 5;
+        int j = 0;
+        try
+        {
+            int k = i / j;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            Console.WriteLine("Executed Cath");
+        }
     }
 }
 
