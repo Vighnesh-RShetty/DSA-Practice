@@ -94,8 +94,19 @@ public class Program
         //Rearrange_Array_Elements_By_Sign.MoveSignByPositiveAndNegative();
         // Next_Permutation.Next_Permutation_Problem();
         //Next_Permutation.Next_Permutation_Problem_Two();
-        LeadersInArray.LeadersArray();
-      //  Console.WriteLine(maxPrice);
+        //LeadersInArray.LeadersArray();
+        //  Console.WriteLine(maxPrice);
+
+        String name = "Viggu";
+
+        Console.WriteLine("My Name Is {0}", name);
+
+        Console.WriteLine("My Name Is "+ name);
+
+        //Interpolation 
+        Console.WriteLine("My Name Is `{name}`");
+
+        Console.WriteLine($"My Name Is {name}");
 
     }
 }
