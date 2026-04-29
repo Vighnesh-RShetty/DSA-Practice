@@ -91,7 +91,9 @@ public class Program
         //Revision_Easy.LongestSubArraySum_Negative();
         //int maxPrice =  StockBuy_And_Sell.BuyAndSell();
         //Rearrange_Array_Elements_By_Sign.RearrangeBySign();
-        Rearrange_Array_Elements_By_Sign.MoveSignByPositiveAndNegative();
+        //Rearrange_Array_Elements_By_Sign.MoveSignByPositiveAndNegative();
+        // Next_Permutation.Next_Permutation_Problem();
+        Next_Permutation.Next_Permutation_Problem_Two();
       //  Console.WriteLine(maxPrice);
 
     }
