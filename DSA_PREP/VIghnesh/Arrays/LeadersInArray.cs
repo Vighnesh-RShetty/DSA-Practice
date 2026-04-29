@@ -8,7 +8,7 @@ namespace DSA_PREP.VIghnesh.Arrays;
 
 public class LeadersInArray
 {
-    public static int[] LeadersArray()
+    public static List<int> LeadersArray()
     {
         // int[] arr = [5, 4, 3, 2, 1];
         //O/P
@@ -16,14 +16,19 @@ public class LeadersInArray
         int[] arr = [10, 22, 12, 3, 0, 6];
         //Output: [22, 12, 6]
 
-        int[] LeadersArray = new int[arr.Length];
+
+        //int[] LeadersArray = new int[arr.Length];
+        List<int> LeadersList = new List<int>();
+
         int maxLeader = arr[arr.Length-1];
-        LeadersArray[arr.Length-1] = arr[arr.Length-1] ;
+        LeadersList.Add(maxLeader);
+
         for(int i = arr.Length - 2; i >= 0; i--)
         {
             if (arr[i] > maxLeader)
             {
-                LeadersArray[i] = arr[i];
+                //LeadersArray[i] = arr[i];
+                LeadersList.Add(arr[i]);
                 if (maxLeader < arr[i])
                 {
                     maxLeader = arr[i];
@@ -31,7 +36,7 @@ public class LeadersInArray
             }
         }
 
-
-        return LeadersArray;
+        LeadersList.Reverse();
+        return LeadersList;
     }
 }
