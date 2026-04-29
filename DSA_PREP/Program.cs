@@ -93,7 +93,8 @@ public class Program
         //Rearrange_Array_Elements_By_Sign.RearrangeBySign();
         //Rearrange_Array_Elements_By_Sign.MoveSignByPositiveAndNegative();
         // Next_Permutation.Next_Permutation_Problem();
-        Next_Permutation.Next_Permutation_Problem_Two();
+        //Next_Permutation.Next_Permutation_Problem_Two();
+        LeadersInArray.LeadersArray();
       //  Console.WriteLine(maxPrice);
 
     }
