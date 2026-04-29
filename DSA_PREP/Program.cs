@@ -113,9 +113,16 @@ public class Program
         {
             int k = i / j;
         }
-        catch (Exception ex)
+       
+        catch (ArgumentOutOfRangeException aex)
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine("abcd");
+            Console.WriteLine(aex.Message);
+        }
+        catch (ArithmeticException aex)
+        {
+            Console.WriteLine("efgh");
+            Console.WriteLine(aex.Message);
         }
         finally
         {
