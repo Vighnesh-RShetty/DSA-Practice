@@ -29,8 +29,9 @@ public class Revision_Easy
 
         for(int k = 0; k < arr.Length; k++)
         {
-            Console.WriteLine("Test Branch");
-            Console.WriteLine("Test Arrays Test Branch " + arr[k]);
+
+            Console.WriteLine("Hello");
+            Console.WriteLine("Conflicts From Main ",arr[k]);
         }
         return arr;
 }
