@@ -29,7 +29,7 @@ public class Revision_Easy
 
         for(int k = 0; k < arr.Length; k++)
         {
-            Console.WriteLine(arr[k]);
+            Console.WriteLine("Array Details " + arr[k]);
         }
         return arr;
 }
