@@ -32,6 +32,8 @@ public class Revision_Easy
 
             Console.WriteLine("Hello");
             Console.WriteLine("Conflicts From Main ",arr[k]);
+            Console.WriteLine("Friend Code Mian Branch");
+            Console.WriteLine("My Local Code Test Branch ");
         }
         return arr;
 }
