@@ -18,6 +18,10 @@ public class Program
 
     static void Main(string[] args)
     {
+
+        Longest_Consecutive_Sequence_in_an_Array.LongestCOnsewcutiveSequenceInArray();
+    }
+}
         // int[] arr = { 10, 5, 2, 7, 1, 9 };
         //int k = 15;
         // int count = MaximumSubArraySum.optimizedMaximunSubArray(arr, k);
@@ -107,29 +111,29 @@ public class Program
         //Console.WriteLine("My Name Is `{name}`");
 
         //Console.WriteLine($"My Name Is {name}");
-        int i = 5;
-        int j = 0;
-        try
-        {
-            int k = i / j;
-        }
+//        int i = 5;
+//        int j = 0;
+//        try
+//        {
+//            int k = i / j;
+//        }
        
-        catch (ArgumentOutOfRangeException aex)
-        {
-            Console.WriteLine("abcd");
-            Console.WriteLine(aex.Message);
-        }
-        catch (ArithmeticException aex)
-        {
-            Console.WriteLine("efgh");
-            Console.WriteLine(aex.Message);
-        }
-        finally
-        {
-            Console.WriteLine("Executed Cath");
-        }
-    }
-}
+//        catch (ArgumentOutOfRangeException aex)
+//        {
+//            Console.WriteLine("abcd");
+//            Console.WriteLine(aex.Message);
+//        }
+//        catch (ArithmeticException aex)
+//        {
+//            Console.WriteLine("efgh");
+//            Console.WriteLine(aex.Message);
+//        }
+//        finally
+//        {
+//            Console.WriteLine("Executed Cath");
+//        }
+//    }
+//}
 
 
 
