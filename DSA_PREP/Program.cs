@@ -19,7 +19,8 @@ public class Program
     static void Main(string[] args)
     {
 
-        Longest_Consecutive_Sequence_in_an_Array.LongestCOnsewcutiveSequenceInArray();
+        Longest_Consecutive_Sequence_in_an_Array.LongestCOnsewcutiveSequenceInArray_Opti();
+
     }
 }
         // int[] arr = { 10, 5, 2, 7, 1, 9 };
