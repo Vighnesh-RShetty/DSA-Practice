@@ -22,22 +22,22 @@ public class Revision_Easy
             }
             else
             {
-                arr[i+1]= arr[j];
-                i++;j++;
+                arr[i + 1] = arr[j];
+                i++; j++;
             }
         }
 
-        for(int k = 0; k < arr.Length; k++)
+        for (int k = 0; k < arr.Length; k++)
         {
 
             Console.WriteLine("Hello");
-            Console.WriteLine("Conflicts From Main ",arr[k]);
+            Console.WriteLine("Conflicts From Main ", arr[k]);
 
             Console.WriteLine("Friend Code Mian Branch");
             Console.WriteLine("My Local Code Test Branch ");
         }
         return arr;
-}
+    }
 
     public static int[] Left_Rotate_Array_By_One()
     {
@@ -50,16 +50,16 @@ public class Revision_Easy
         }
 
         int temp = arr[0];
-        for(int i = 1; i < arr.Length; i++)
+        for (int i = 1; i < arr.Length; i++)
         {
             arr[i - 1] = arr[i];
         }
 
-        arr[arr.Length-1] = temp;
+        arr[arr.Length - 1] = temp;
 
-        for(int j = 0; j < arr.Length; j++)
+        for (int j = 0; j < arr.Length; j++)
         {
-            Console.Write(" "+arr[j]);
+            Console.Write(" " + arr[j]);
 
         }
 
@@ -67,8 +67,8 @@ public class Revision_Easy
     }
 
     //Rotate Arry By K Place Logic Swap
-      
-    public static void SwapArray(int start,int end,int[] arr)
+
+    public static void SwapArray(int start, int end, int[] arr)
     {
 
         while (start < end)
@@ -76,31 +76,31 @@ public class Revision_Easy
             int temp = arr[start];
             arr[start] = arr[end];
             arr[end] = temp;
-            start++;end--;
+            start++; end--;
         }
     }
     //
     public static int[] Left_Rotate_Array_By_K_Places()
     {
-        
+
         int[] arr = [1, 2, 3, 4, 5];
         int k = 7;
 
         // [3, 4, 5, 1, 2]
 
-        
+
 
         if (arr.Length <= 1)
         {
             return arr;
         }
 
-        k = ((k%arr.Length)+arr.Length) % arr.Length;
-        SwapArray(0, k-1, arr);
+        k = ((k % arr.Length) + arr.Length) % arr.Length;
+        SwapArray(0, k - 1, arr);
         SwapArray(k, arr.Length - 1, arr);
-        SwapArray(0, arr.Length-1,arr);
+        SwapArray(0, arr.Length - 1, arr);
 
-        for(int i = 0; i < arr.Length; i++)
+        for (int i = 0; i < arr.Length; i++)
         {
             Console.WriteLine(arr[i]);
         }
@@ -115,7 +115,8 @@ public class Revision_Easy
         int nz = 0;
         int z = 0;
 
-        while(nz < arr.Length){
+        while (nz < arr.Length)
+        {
             if (arr[nz] == 0)
             {
                 nz++;
@@ -125,11 +126,11 @@ public class Revision_Easy
                 int temp = arr[nz];
                 arr[nz] = arr[z];
                 arr[z] = temp;
-                z++;nz++;
+                z++; nz++;
             }
         }
 
-        for(int i = 0; i < arr.Length; i++)
+        for (int i = 0; i < arr.Length; i++)
         {
             Console.WriteLine(arr[i]);
         }
@@ -139,7 +140,7 @@ public class Revision_Easy
     {
         int[] arr1 = [1, 2, 4, 5];
         int[] arr2 = [2, 3, 5, 6];
-        int[] res = new int[arr2.Length  + arr1.Length ];
+        int[] res = new int[arr2.Length + arr1.Length];
 
         int i = 0; int j = 0; int k = 0;
 
@@ -147,16 +148,16 @@ public class Revision_Easy
         {
             if (arr1[i] > arr2[j])
             {
-                if (k==0 || res[k - 1] != arr2[j])
+                if (k == 0 || res[k - 1] != arr2[j])
                 {
                     res[k] = arr2[j];
-                     k++;
+                    k++;
                 }
                 j++;
             }
             else if (arr1[i] < arr2[j])
             {
-                if (k==0 || res[k - 1] != arr1[i])
+                if (k == 0 || res[k - 1] != arr1[i])
                 {
                     res[k] = arr1[i];
                     k++;
@@ -165,35 +166,35 @@ public class Revision_Easy
             }
             else if (arr1[i] == arr2[j])
             {
-                if (k==0 || res[k - 1] != arr1[i])
+                if (k == 0 || res[k - 1] != arr1[i])
                 {
                     res[k] = arr1[i];
-                     k++;
+                    k++;
                 }
                 i++; j++;
             }
         }
         while (i < arr1.Length)
         {
-            if (k==0 || res[k - 1] != arr1[i])
+            if (k == 0 || res[k - 1] != arr1[i])
             {
                 res[k] = arr1[i];
                 i++; k++;
             }
-            
+
         }
 
         while (j < arr2.Length)
         {
-            if (k==0 || res[k - 1] != arr2[j])
+            if (k == 0 || res[k - 1] != arr2[j])
             {
                 res[k] = arr2[j];
                 j++; k++;
             }
-           
+
         }
 
-        for( int z = 0; z < res.Length; z++)
+        for (int z = 0; z < res.Length; z++)
         {
             Console.WriteLine(res[z]);
         }
@@ -209,12 +210,12 @@ public class Revision_Easy
         {
             sum += arr[right];
 
-            while(sum>k)
+            while (sum > k)
             {
                 sum -= arr[left];
                 left++;
             }
-            if(sum == k && maxLength<(right-left)+1)
+            if (sum == k && maxLength < (right - left) + 1)
             {
                 maxLength = right - left + 1;
             }
@@ -233,14 +234,17 @@ public class Revision_Easy
         int sum = 0;
         int maxLength = 0;
 
-        for(int i = 0; i < arr.Length; i++)
+        for (int i = 0; i < arr.Length; i++)
         {
             sum += arr[i];
 
             int remaing = sum - k;
-            if ((prefixMap.ContainsKey(remaing)) && maxLength < (i - prefixMap[remaing])) {
+            if ((prefixMap.ContainsKey(remaing)) && maxLength < (i - prefixMap[remaing]))
+            {
                 maxLength = remaing;
-            }else if(prefixMap.ContainsKey(remaing)){
+            }
+            else if (prefixMap.ContainsKey(remaing))
+            {
                 prefixMap[remaing] = i;
             }
 
@@ -248,11 +252,102 @@ public class Revision_Easy
             {
                 prefixMap[remaing] = i;
             }
-            
+
         }
         return maxLength;
     }
 
+    public static int LongestCOnsewcutiveSequenceInArray_Opti()
+    {
+        int[] arr = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1];
+        int longest = 0;
+        HashSet<int> setData = new HashSet<int>(arr);
 
+        foreach (int num in setData)
+        {
+            int count = 1;
+            int current = num;
+
+            if (!setData.Contains(current - 1))
+            {
+                while (setData.Contains(current + 1))
+                {
+                    count++;
+                    current++;
+                }
+
+                if (count > longest)
+                {
+                    longest = count;
+                }
+
+            }
+        }
+        return longest;
+    }
+
+    public static void SetMatrixZero()
+    {
+        //[[1,1,1],[1,0,1],[1,1,1]]
+        int[,] matrix =
+            {
+
+            { 1, 1, 1 },
+            { 1, 0, 1 },
+            { 1, 1, 1 }
+        };
+
+        bool[] row = new bool[matrix.GetLength(0)];
+        bool[] col = new bool[matrix.GetLength(1)];
+
+
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                if (matrix[i, j] == 0)
+                {
+                    row[i] = true;
+                    col[j] = true;
+                }
+            }
+
+        }
+
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                if (row[i] || col[j])
+                {
+                    matrix[i, j] = 0;
+                }
+            }
+        }
+
+
+
+    }
+    public static void Nearest_Average_Val()
+    {
+        int[] arr = { 4, 6, 1, 9, 12 };
+        int sum = 0;
+        int avgValue = 0;
+        int finalValue = 0;
+        for(int i = 0; i < arr.Length; i++)
+        {
+            sum += arr[i];
+            avgValue = sum / i + 1;
+
+            if (arr[i]<finalValue || finalValue < avgValue)
+            {
+                finalValue = avgValue;
+            }
+
+        }
+
+        //int avg = sum/ arr.Length;
+        Console.WriteLine(finalValue);
+    }
 }
 
