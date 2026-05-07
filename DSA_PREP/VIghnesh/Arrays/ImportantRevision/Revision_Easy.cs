@@ -325,9 +325,8 @@ public class Revision_Easy
             }
         }
 
-
-
     }
+
     public static void Nearest_Average_Val()
     {
         int[] arr = { 4, 6, 1, 9, 12 };

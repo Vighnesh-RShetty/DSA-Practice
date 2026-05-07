@@ -24,7 +24,9 @@ public class Program
         //Basics_2D.BasicOperation();
         //Set_Matrix_Zeroes.SetMatrixZero();
         //Revision_Easy.LongestCOnsewcutiveSequenceInArray_Opti();
-        Revision_Easy.SetMatrixZero();
+        //Revision_Easy.SetMatrixZero();
+        //Transpose_Matrix.Rotate_2D_Array();
+        Transpose_Matrix.Roate_2D_Array_Optimized();
     }
 }
         // int[] arr = { 10, 5, 2, 7, 1, 9 };
