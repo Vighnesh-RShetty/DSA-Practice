@@ -22,6 +22,14 @@ public class Program
     {
         // Console.WriteLine( Check_if_the_array_is_sorted_II.CheckArraySorted() );
         // Console.WriteLine(Check_if_the_array_is_sorted_II.CheckArraySorted_V2());
-        Remove_Dublicates_from_the_Sorted_Array.RemoveDublicateFromTheSortedArray();
+        // Remove_Dublicates_from_the_Sorted_Array.RemoveDublicateFromTheSortedArray();
+
+        //Move_Zeros_To_End.MoveZeroToEnd();
+
+        //Find_Missing_Number.FindMissingNumber();
+        //Maximum_Consecutive_Ones.MaxConsecutiveOnes();
+
+      //int values =   Find_the_Number_That_Appears_Once_and_other_numbers_twice.NumberAppearceOnce();
+        int values = Find_the_Number_That_Appears_Once_and_other_numbers_twice.NumbetThatAppearceOnce();
     }
 }
