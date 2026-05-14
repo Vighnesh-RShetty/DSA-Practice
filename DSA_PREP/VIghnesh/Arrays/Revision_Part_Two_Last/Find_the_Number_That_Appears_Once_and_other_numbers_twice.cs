@@ -22,7 +22,6 @@ public class Find_the_Number_That_Appears_Once_and_other_numbers_twice
                 {
                     count++;
                 }
-               
             }
 
             if (count == 1)
