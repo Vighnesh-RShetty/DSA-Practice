@@ -32,7 +32,20 @@ public class Program
         //int values =   Find_the_Number_That_Appears_Once_and_other_numbers_twice.NumberAppearceOnce();
         // int values = Find_the_Number_That_Appears_Once_and_other_numbers_twice.NumbetThatAppearceOnce();
 
-        Longest_Subarray_With_Given_Sum_K_Positives.Longest_SubArray_Length_Positives();
+        #region Max SubArray
+        //Longest_Subarray_With_Given_Sum_K_Positives.Longest_SubArray_Length_Positives();
+        // Longest_Subarray_With_Given_Sum_K_Positives.Longest_SubArray_Length_Positives_Better();
+        //Longest_Subarray_With_Given_Sum_K_Positives.Longest_SubArray_Length_Positives_Optimal();
 
+        // Longest_subarray_with_sum_k_Negatives.Longest_SubArray_With_Sum_K_Negatives();
+
+        //DSA_PREP.VIghnesh.Arrays.Revision_Part_Two_Last.TwoSum.TwoSumBruteForce();
+        //Sort_An_Array_of_0_1_and_2.SortArrayByZeoOnesandTwo();
+        //  Maximum_Subarray_sum.BruteForceMaxSum();
+        // Maximum_Subarray_sum.MaxSumOptimal_Kadanes_Algo();
+        // Print_subarray_with_maximum_subarray_sum.Print_SubArray_MaxSum();
+
+        Stock_Buy_And_Sell_Revision.Stock_Buy_Sell();
+        #endregion
     }
 }
