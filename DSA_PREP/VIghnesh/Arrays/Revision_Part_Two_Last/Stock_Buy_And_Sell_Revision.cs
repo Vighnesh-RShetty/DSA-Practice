@@ -22,21 +22,20 @@ namespace DSA_PREP.VIghnesh.Arrays.Revision_Part_Two_Last
              */
 
             int[] arr = [10, 7, 5, 8, 11, 9];
-            int sellValue = arr[1];
+            int buyPrice = arr[0];
             int profit = 0;
             int maxProfit = 0;
 
             for (int i = 0; i <arr.Length; i++)
             {
-                if (arr[i] > sellValue)
-                {
-                    profit = sellValue - arr[i];
-                    if(profit > maxProfit)
-                        maxProfit = profit;
-                }
-                if (arr[i] > sellValue && i != 0)
-                    sellValue = arr[i];
+                if (arr[i] < buyPrice)
+                    buyPrice = arr[i];
 
+                profit = arr[i] - buyPrice;
+                if (profit > maxProfit)
+                {
+                    maxProfit = profit;
+                }
             }
             return maxProfit;
         }

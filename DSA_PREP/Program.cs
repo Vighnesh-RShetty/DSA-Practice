@@ -4,6 +4,7 @@
 using DSA_PREP.VIghnesh.Arrays;
 using DSA_PREP.VIghnesh.Arrays.ImportantRevision;
 using DSA_PREP.VIghnesh.Arrays.Revision_Part_Two_Last;
+using DSA_PREP.VIghnesh.Arrays.Revision_Part_Two_Last.Matrix;
 using DSA_PREP.VIghnesh.Arrays.SearchingAlgo;
 using DSA_PREP.VIghnesh.Arrays.TwoDimension_Array;
 using DSA_PREP.VIghnesh.Revision.Array;
@@ -45,7 +46,16 @@ public class Program
         // Maximum_Subarray_sum.MaxSumOptimal_Kadanes_Algo();
         // Print_subarray_with_maximum_subarray_sum.Print_SubArray_MaxSum();
 
-        Stock_Buy_And_Sell_Revision.Stock_Buy_Sell();
+        //Stock_Buy_And_Sell_Revision.Stock_Buy_Sell();
+        //NextPermutation_Revision_Part.Next_Permu();
+
+        //Set_Matrix_Zero.SetMatZero();
+        //Rotate_Matrix_By_90.RotateMatrix();
+
+        // Count_Subarrays_With_Given__Sum.MaxSubArrayCount();
+        //Pascal_Triangle.PascalTriangle();
+        //Majority_Element_II.MajorityEle();
+        Three_Sum.Three_Sum_Array();
         #endregion
     }
 }
