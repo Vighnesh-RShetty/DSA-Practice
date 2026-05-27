@@ -55,7 +55,13 @@ public class Program
         // Count_Subarrays_With_Given__Sum.MaxSubArrayCount();
         //Pascal_Triangle.PascalTriangle();
         //Majority_Element_II.MajorityEle();
-        Three_Sum.Three_Sum_Array();
+        //Three_Sum.Three_Sum_Array();
+
+
+        //Three_Sum.Three_Sum_Array_Brute();
+        //Three_Sum.Three_Sum_Array_Better();
+        //Three_Sum.Three_Sum_Array_Optimal_Solution();
+        _4_Sum_.Four_Sum_Problem();
         #endregion
     }
 }
