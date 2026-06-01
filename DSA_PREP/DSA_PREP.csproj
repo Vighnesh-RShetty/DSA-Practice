@@ -11,6 +11,7 @@
     <Folder Include="Mangal\Arrays\" />
     <Folder Include="Mangal\Doubts\" />
     <Folder Include="Mangal\Strings\" />
+    <Folder Include="VIghnesh\Arrays\Largest_Subarray_with_Sum_Zero\" />
     <Folder Include="VIghnesh\Doubts\" />
     <Folder Include="VIghnesh\Strings\" />
     <Folder Include="VIghnesh\SystemDesign\StratergyDesignPattern\StartergyDesignPatternSolution\" />
