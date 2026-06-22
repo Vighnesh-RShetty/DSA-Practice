@@ -6,6 +6,7 @@ using DSA_PREP.VIghnesh.Arrays.ImportantRevision;
 using DSA_PREP.VIghnesh.Arrays.Revision_Part_Two_Last;
 using DSA_PREP.VIghnesh.Arrays.Revision_Part_Two_Last.Matrix;
 using DSA_PREP.VIghnesh.Arrays.SearchingAlgo;
+using DSA_PREP.VIghnesh.Arrays.Sort;
 using DSA_PREP.VIghnesh.Arrays.TwoDimension_Array;
 using DSA_PREP.VIghnesh.Revision.Array;
 using DSA_PREP.VIghnesh.Revision.Array.AlgosConfusionQuestion;
@@ -63,7 +64,27 @@ public class Program
         //Three_Sum.Three_Sum_Array_Optimal_Solution();
         //_4_Sum_.Four_Sum_Problem();
 
-        Largest_Subarray_with_Sum_Zero.Largest_SubArray_With_Sum_Zero();
+        //Largest_Subarray_with_Sum_Zero.Largest_SubArray_With_Sum_Zero();
+        //Count_SubArray_With_Given_XOR_K.Count_SubArray_With_Given_XOR_k();
+
+        // Count_SubArray_With_Given_XOR_K.Count_SubArray_With_Given_XOR_k_Optimal();
+        //Merge_Intervals.Merge_Interval_Brute();
+        //Print_Matrix_In_Spiral_Manner.PrintMatrixInSpiralManner();
         #endregion
+
+        //int[] nums1 =  { 1, 3, 5};
+        // int[] nums2 =  { 2, 4, 6 };
+
+        // int m = 3;
+        // int n = 3;
+
+        // Merge_Two_Sorted_Array_WIthout_Extra_Space.Merge(nums1, m, nums2, n);
+        // Find_Missing_Repeating_Numbers.Find_Missing_Repeating_Number();
+
+        //Sorting Technique
+
+        //Selection_Sort.SelectionSort();
+        Bubble_Sort.BubbleSort();
+
     }
 }
