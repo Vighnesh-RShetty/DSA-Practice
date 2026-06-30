@@ -8,6 +8,7 @@ using DSA_PREP.VIghnesh.Arrays.Revision_Part_Two_Last.Matrix;
 using DSA_PREP.VIghnesh.Arrays.SearchingAlgo;
 using DSA_PREP.VIghnesh.Arrays.Sort;
 using DSA_PREP.VIghnesh.Arrays.TwoDimension_Array;
+using DSA_PREP.VIghnesh.Recursion;
 using DSA_PREP.VIghnesh.Revision.Array;
 using DSA_PREP.VIghnesh.Revision.Array.AlgosConfusionQuestion;
 using DSA_PREP.VIghnesh.SystemDesign.LiskovSubstituion_Principle.LiskovFailing;
@@ -84,7 +85,44 @@ public class Program
         //Sorting Technique
 
         //Selection_Sort.SelectionSort();
-        Bubble_Sort.BubbleSort();
+        //Bubble_Sort.BubbleSort();
 
+        //Insertion_Sort.InsertionSort();
+        //BaseCondition baseCondition = new BaseCondition();
+
+        //baseCondition.functionBaseCondition();
+
+        //
+        //  PrintName_FIve_Times printNames = new();
+        //printNames.PrintNames();
+
+        //Print N Values
+        //Print_Linearly_1_N printNValue = new();
+        //printNValue.Print_1_N(5);
+
+        //Print_From_N_1 printNValue = new();
+        //printNValue.Prinrt_N_To_1(5);
+
+        //Print_Linearly_BackTracking printLinearly = new();
+
+
+        //printLinearly.Print_Linearly_BackTracking_1_N(n, n);
+        int n = 5;
+
+        //Sum_Of_Natural_Number sumNatural = new();
+        //sumNatural.Print_Sum_Value(n,0);
+
+        //Factorial_Of_Number factNum = new();
+        //factNum.Print_Factorial_Number(5, 1);
+
+        int[] arr = { 2, 6, 7, 1, 0 };
+
+        ReverseArray_Through_Recursion reverseArray = new();
+        //reverseArray.Reverse_Array(arr, 0, arr.Length - 1);
+        string str = "MADAM";
+
+        //bool res = reverseArray.CheckPalindrome_Recursion(str, 0);
+
+        reverseArray.PrintAllSubSequence(arr, new List<int>(), 0);
     }
 }
