@@ -14,6 +14,7 @@ public class Insertion_Sort
 
         for (int i = 0; i < arr.Length; i++)
         {
+
             int j = i;
 
             while(j>0 && arr[j-1] > arr[j])

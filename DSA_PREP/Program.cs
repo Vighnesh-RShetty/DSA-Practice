@@ -2,7 +2,9 @@
 //Console.WriteLine("Hello, World!");
 
 using DSA_PREP.VIghnesh.Arrays;
+using DSA_PREP.VIghnesh.Arrays.Binary_Search;
 using DSA_PREP.VIghnesh.Arrays.ImportantRevision;
+using DSA_PREP.VIghnesh.Arrays.Revision_Last_Part;
 using DSA_PREP.VIghnesh.Arrays.Revision_Part_Two_Last;
 using DSA_PREP.VIghnesh.Arrays.Revision_Part_Two_Last.Matrix;
 using DSA_PREP.VIghnesh.Arrays.SearchingAlgo;
@@ -115,14 +117,39 @@ public class Program
         //Factorial_Of_Number factNum = new();
         //factNum.Print_Factorial_Number(5, 1);
 
-        int[] arr = { 2, 6, 7, 1, 0 };
+        //int[] arr = { 2, 6, 7, 1, 0 };
 
-        ReverseArray_Through_Recursion reverseArray = new();
+        // ReverseArray_Through_Recursion reverseArray = new();
         //reverseArray.Reverse_Array(arr, 0, arr.Length - 1);
-        string str = "MADAM";
+        //string str = "MADAM";
 
         //bool res = reverseArray.CheckPalindrome_Recursion(str, 0);
 
-        reverseArray.PrintAllSubSequence(arr, new List<int>(), 0);
+        //reverseArray.PrintAllSubSequence(arr, new List<int>(), 0);
+
+
+        //int[] arr = {2,3,7,1,3,5};
+        //Merge_with_inversion merge = new();
+        //merge.Merge_Sort(arr, 0, arr.Length - 1);
+
+
+        //int length = Maximum_SubArray_Sum_Positives.Sliding_Window();
+        // Console.WriteLine("Length " + length);
+
+        // BinaryReader Search 
+
+        // int[] nums = [3, 5, 8, 15, 19];
+        // int x = 9;
+
+        //int[] nums = [1, 2, 2, 3];
+        //int x = 2;
+
+        //int ans = Lower_Bound.LowerBound(nums, x);
+        //   Console.WriteLine("Answre", ans);
+
+        int[] arr = [5, 7, 7, 8, 8, 10];int target = 8;
+
+        int[] ans = FindFirstAndLastOcuurance.Find_First_Last_Occurance(arr, target);
+        Console.WriteLine("Answre", ans);
     }
 }
