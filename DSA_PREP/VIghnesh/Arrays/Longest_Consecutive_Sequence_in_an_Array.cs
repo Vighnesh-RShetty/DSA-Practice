@@ -37,8 +37,6 @@ public class Longest_Consecutive_Sequence_in_an_Array
         return count;
     }
 
- 
-
    public static int LongestCOnsewcutiveSequenceInArray_Opti()
     {
         int[] arr = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1];

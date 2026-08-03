@@ -44,13 +44,14 @@ namespace DSA_PREP.VIghnesh.Arrays
             int maxLength = 0;
             int prefixSum = 0;
             int currentLength = 0;
+            dict[0] = -1;
            for(int i = 0; i < arr.Length; i++)
             {
                 prefixSum += arr[i];
-                if(prefixSum == k)
-                {
-                    maxLength = i + 1;
-                }
+                //if(prefixSum == k)
+                //{
+                //    maxLength = i + 1;
+                //}
                
 
                 int remaining = prefixSum - k;
