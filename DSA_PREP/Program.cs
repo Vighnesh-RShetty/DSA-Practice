@@ -147,9 +147,11 @@ public class Program
         //int ans = Lower_Bound.LowerBound(nums, x);
         //   Console.WriteLine("Answre", ans);
 
-        int[] arr = [5, 7, 7, 8, 8, 10];int target = 8;
+        //int[] arr = [5, 7, 7, 8, 8, 10];int target = 8;
 
-        int[] ans = FindFirstAndLastOcuurance.Find_First_Last_Occurance(arr, target);
-        Console.WriteLine("Answre", ans);
+        //int[] ans = FindFirstAndLastOcuurance.Find_First_Last_Occurance(arr, target);
+        //Console.WriteLine("Answre", ans);
+        int[] arr = [4, 5, 6, 7, 0, 1, 2, 3];
+        Find_Minimum_In_Sorted.Find_Minimum_In_Rotated(arr);
     }
 }
