@@ -3,6 +3,7 @@
 
 using DSA_PREP.VIghnesh.Arrays;
 using DSA_PREP.VIghnesh.Arrays.Binary_Search;
+using DSA_PREP.VIghnesh.Arrays.Binary_Search.Binary_Search_On_Answers;
 using DSA_PREP.VIghnesh.Arrays.ImportantRevision;
 using DSA_PREP.VIghnesh.Arrays.Revision_Last_Part;
 using DSA_PREP.VIghnesh.Arrays.Revision_Part_Two_Last;
@@ -109,7 +110,7 @@ public class Program
 
 
         //printLinearly.Print_Linearly_BackTracking_1_N(n, n);
-        int n = 5;
+        //int n = 5;
 
         //Sum_Of_Natural_Number sumNatural = new();
         //sumNatural.Print_Sum_Value(n,0);
@@ -151,7 +152,15 @@ public class Program
 
         //int[] ans = FindFirstAndLastOcuurance.Find_First_Last_Occurance(arr, target);
         //Console.WriteLine("Answre", ans);
-        int[] arr = [4, 5, 6, 7, 0, 1, 2, 3];
-        Find_Minimum_In_Sorted.Find_Minimum_In_Rotated(arr);
+        //int[] arr = [4, 5, 6, 7, 0, 1, 2, 3];
+        //Find_Minimum_In_Sorted.Find_Minimum_In_Rotated(arr);
+
+        //int n = FindSqrtOfAnInteger.FindSqrtOfInteger(35);
+       // Console.WriteLine(n);
+
+     int[] nums = [7, 7, 7, 7, 13, 11, 12, 7]; int m = 2; int k = 3;
+
+       int day =  No_Of_Bouquet.No_Of_Bouq(nums, m, k);
+        Console.WriteLine(day);
     }
 }
