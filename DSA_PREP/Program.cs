@@ -156,11 +156,25 @@ public class Program
         //Find_Minimum_In_Sorted.Find_Minimum_In_Rotated(arr);
 
         //int n = FindSqrtOfAnInteger.FindSqrtOfInteger(35);
-       // Console.WriteLine(n);
+        // Console.WriteLine(n);
 
-     int[] nums = [7, 7, 7, 7, 13, 11, 12, 7]; int m = 2; int k = 3;
+        //int[] nums = [7, 7, 7, 7, 13, 11, 12, 7]; int m = 2; int k = 3;
 
-       int day =  No_Of_Bouquet.No_Of_Bouq(nums, m, k);
-        Console.WriteLine(day);
+        //  int day =  No_Of_Bouquet.No_Of_Bouq(nums, m, k);
+        //   Console.WriteLine(day);
+
+        //int[] nums = [8, 4, 2, 3];
+        //int limit = 4;
+
+        //int smallest = smallest_divisor.FindSmallestDivisor(nums, limit);
+        //Console.WriteLine(smallest);
+
+        //Input: weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], days = 5
+        //Output: 15int[] 
+
+        int[] weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        int days = 5;
+        int  minCapacity = Capacity_To_Ship_Packages_Within_D_Days.MinCapcity_Ship_Packages(weights, days);
+        Console.WriteLine(minCapacity);
     }
 }
