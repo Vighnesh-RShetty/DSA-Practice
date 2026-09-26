@@ -166,15 +166,53 @@ public class Program
         //int[] nums = [8, 4, 2, 3];
         //int limit = 4;
 
+        // Count_Cows_Brute_Force.CanWePlaceCows
         //int smallest = smallest_divisor.FindSmallestDivisor(nums, limit);
         //Console.WriteLine(smallest);
 
         //Input: weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], days = 5
         //Output: 15int[] 
 
-        int[] weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        int days = 5;
-        int  minCapacity = Capacity_To_Ship_Packages_Within_D_Days.MinCapcity_Ship_Packages(weights, days);
-        Console.WriteLine(minCapacity);
+        //int[] weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        //int days = 5;
+        //int  minCapacity = Capacity_To_Ship_Packages_Within_D_Days.MinCapcity_Ship_Packages(weights, days);
+        //Console.WriteLine(minCapacity);
+
+        // int[] arr = [0, 3, 4, 7, 10, 9];
+        // int cows = 4;
+
+        //int maxValue =  Count_Cows_Brute_Force.CountCows(arr, cows);
+
+        // Console.WriteLine(maxValue);
+
+        //int[] arr = [25, 46, 28, 49, 24];
+        //int m = 4;
+
+        //int countPages = Allocate_Books.AllocateBookBrute_Force(arr, m);
+
+        //Console.WriteLine(countPages);
+
+        //int[] arr = [10, 20, 30, 40];
+        //int count = Split_Array_LargestSum.SplitLargest(arr, 2);
+        //Console.WriteLine(count);
+
+        //  int[] arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        //  int k = 10;
+
+        //double distance =   Gas_Station_Question.Gas_Station_Distance(arr, k);
+        //  Console.WriteLine(distance);
+
+        //int[] arr1 = { 1, 2, 3, 4, 9, 11 };
+
+        //int[] arr2 = { 7, 12, 14, 14 };
+
+        //int median = Median_Of_Array.MedianOfArray_Binary(arr1, arr2);
+        //Console.WriteLine(median);
+
+        // int[] arr = [2, 3, 4, 7, 11]; int k = 5;
+        int[] arr = [4, 7, 8]; int k = 3;
+      int missing =  Kth_Missing_Positive_Number.OptimalSolutionBinarySearch(arr, 3);
+
+        Console.WriteLine(missing);
     }
 }
