@@ -2,6 +2,7 @@
 using Revison_First_.Arrays;
 using Revison_First_.Arrays.TwoDimensionArray;
 using Revison_First_.Binary_Search.BS_ON_1D_Array;
+using Revison_First_.Binary_Search.BS_ON_ANSWERS;
 
 //Console.WriteLine("Hello, World!");
 
@@ -85,9 +86,41 @@ using Revison_First_.Binary_Search.BS_ON_1D_Array;
 
 //Console.WriteLine(ans);
 
-int[] arr = [1,1,2,2,3,3,4,5,5,6,6];
-int ans = Single_Element_In_Sorted_Array.FIndSingle(arr);
+//int[] arr = [1,1,2,2,3,3,4,5,5,6,6];
+//int ans = Single_Element_In_Sorted_Array.FIndSingle(arr);
 
-Console.WriteLine(ans);
+//Console.WriteLine(ans);
+
+//int number = Find_square_root_of_a_Number.FInd_Sqrt_Of_Number(28);
+//Console.WriteLine(number);
+
+//int num = Find_Nth_Root_of_a_number.Nth_Root_Of_Number(3,27);
+//Console.WriteLine(num);
+//int[] piles = [7, 15, 6, 3];int h = 8;
+
+//int hours = KokoEatingBananas.KokoBanana(piles, h);
+//Console.WriteLine(hours);
+
+//int[] arr = [7, 7, 7, 7, 13, 11, 12, 7];
+//int m = 2;
+//int k = 3;
+
+//int num = Minimun_Days_ToMake_M_Bouquet.Min_Days_Required_To_Make_Bouq(arr, m, k);
+//Console.WriteLine(num);
 
 
+
+//int[] arr = [1, 2, 3, 4, 5];
+//int[] arr = [8, 4, 2, 3];
+//int num = Find_Smallest_Divisor.FinadSmallestDivisor(arr, 10);
+//Console.WriteLine(num);
+
+
+//int minCap = Capacity_Of_Ships_Packages_Within_D_Days.Capacity_Of_Ship([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5);
+//Console.WriteLine(minCap);
+
+int[] arr = [12,34,62,90];
+int m = 2;
+int pages = Allocate_Books.AllocateBooks(arr, m);
+
+Console.WriteLine(pages);
